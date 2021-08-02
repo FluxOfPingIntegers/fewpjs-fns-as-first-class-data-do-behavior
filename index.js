@@ -10,4 +10,17 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
+function greet(time) {
+  let timeNum = Number(time.substring(0, 2));
+  if (timeNum > 17) {
+    return "Good Evening";
+  } else if (timeNum >= 12 && timeNum <= 17) {
+    return "Good Afternoon";
+  } else {
+    return "Good Morning";
+  }
+}
 /* Write your implementation of displayMessage() */
+function displayMessage(string) {
+  document.getElementById("greeting").innerHTML = string;
+}
